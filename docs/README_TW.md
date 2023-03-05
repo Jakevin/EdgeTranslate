@@ -17,9 +17,13 @@
 [![Mozilla Add-on](https://badgen.net/amo/users/edge_translate?icon=firefox&color=green)](https://addons.mozilla.org/firefox/addon/edge_translate/)
 [![Mozilla Add-on](https://badgen.net/amo/stars/edge_translate?icon=firefox&color=green)](https://addons.mozilla.org/firefox/addon/edge_translate/)
 
-## 演示
+## 展示
 
 ![demo_zh_TW](./images/demo_zh_TW.gif)
+
+![add ChatGPT](./docs/images/chatgpt.png)
+
+![Remove Bing](./docs/images/remove_bing.png)
 
 ## 下載
 

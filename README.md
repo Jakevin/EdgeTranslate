@@ -29,6 +29,10 @@ View this page in other languages:
 
 ![demo_en](./docs/images/demo_en.gif)
 
+![add ChatGPT](./docs/images/chatgpt.png)
+
+![Remove Bing](./docs/images/remove_bing.png)
+
 ## Downloads
 
 [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com/addons/detail/bfdogplmndidlpjfhoijckpakkdjkkil)
