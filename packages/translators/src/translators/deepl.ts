@@ -15,6 +15,7 @@ const LANGUAGES: [string, string][] = [
     ["fi", "fi"],
     ["nl", "nl"],
     ["zh-CN", "zh"],
+    ["zh-TW", "zh"],
     ["cs", "cs"],
     ["lv", "lv"],
     ["lt", "lt"],

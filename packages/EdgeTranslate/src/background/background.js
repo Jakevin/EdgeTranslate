@@ -51,7 +51,7 @@ const DEFAULT_SETTINGS = {
     DefaultPageTranslator: "YouDaoPageTranslate",
     HybridTranslatorConfig: {
         // The translators used in current hybrid translate.
-        translators: ["BaiduTranslate", "BingTranslate", "GoogleTranslate"],
+        translators: ["BaiduTranslate", "GoogleTranslate"],
 
         // The translators for each item.
         selections: {
@@ -62,7 +62,7 @@ const DEFAULT_SETTINGS = {
             sPronunciation: "BaiduTranslate",
 
             // For the following three items, any translator combination is OK.
-            detailedMeanings: "BingTranslate",
+            detailedMeanings: "BaiduTranslate",
             definitions: "GoogleTranslate",
             examples: "BaiduTranslate",
         },

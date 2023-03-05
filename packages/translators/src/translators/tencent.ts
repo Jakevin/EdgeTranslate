@@ -8,6 +8,7 @@ import { PronunciationSpeed, TranslationResult } from "../types";
 const LANGUAGES: [string, string][] = [
     ["auto", "auto"],
     ["zh-CN", "zh"],
+    ["zh-TW", "zh"],
     ["en", "en"],
     ["ja", "jp"],
     ["ko", "kr"],

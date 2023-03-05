@@ -367,6 +367,18 @@
         "message": "DeepL",
         "description": "Abbreviation of DeepL Translate."
     },
+    "ChatGPTTranslate": {
+        "message": "ChatGPT",
+        "description": "ChatGPT翻訳"
+    },
+    "ChatGPTTranslateShort": {
+        "message": "ChatGPT",
+        "description": "ChatGPT翻訳"
+    },
+    "ChatGPTKey": {
+        "message": "ChatGPTKey",
+        "description": "ChatGPTKey"
+    },
     "GoogleTranslate": {
         "message": "グーグル翻訳",
         "description": "グーグル翻訳"

@@ -1,9 +1,10 @@
-import BingTranslator from "./translators/bing";
+// import BingTranslator from "./translators/bing";
 import GoogleTranslator from "./translators/google";
 import BaiduTranslator from "./translators/baidu";
 import DeeplTranslator from "./translators/deepl";
 import TencentTranslator from "./translators/tencent";
 import HybridTranslator from "./translators/hybrid";
+import ChatGPTTranslator from "./translators/chatgpt";
 import axios from "./axios";
 
 /**
@@ -230,11 +231,12 @@ export {
     axios,
     LANGUAGES,
     HybridTranslator,
-    BingTranslator,
+    // BingTranslator,
     GoogleTranslator,
     TencentTranslator,
     BaiduTranslator,
     DeeplTranslator,
+    ChatGPTTranslator
 };
 export type { HybridSupportedTranslators, HybridConfig, Selections } from "./translators/hybrid";
 export * from "./types";

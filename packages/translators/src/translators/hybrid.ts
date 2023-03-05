@@ -6,15 +6,15 @@ import {
     TranslationResult,
 } from "../types";
 import BaiduTranslator from "./baidu";
-import BingTranslator from "./bing";
 import DeepLTranslator from "./deepl";
 import GoogleTranslator from "./google";
 import TencentTranslator from "./tencent";
+import ChatGPTTranslator from "./chatgpt";
 
 export type HybridSupportedTranslators =
     | "BaiduTranslate"
-    | "BingTranslate"
     | "DeepLTranslate"
+    | "ChatGPTTranslate"
     | "GoogleTranslate"
     | "TencentTranslate";
 
@@ -35,10 +35,10 @@ class HybridTranslator {
     };
     REAL_TRANSLATORS: {
         BaiduTranslate: BaiduTranslator;
-        BingTranslate: BingTranslator;
         GoogleTranslate: GoogleTranslator;
         TencentTranslate: TencentTranslator;
         DeepLTranslate: DeepLTranslator;
+        ChatGPTTranslate:ChatGPTTranslator;
     };
     MAIN_TRANSLATOR: HybridSupportedTranslators = "GoogleTranslate";
 
@@ -50,20 +50,23 @@ class HybridTranslator {
          */
         this.REAL_TRANSLATORS = {
             BaiduTranslate: new BaiduTranslator(),
-            BingTranslate: new BingTranslator(),
             GoogleTranslate: new GoogleTranslator(),
             TencentTranslate: new TencentTranslator(channel),
             DeepLTranslate: null as unknown as DeepLTranslator,
+            ChatGPTTranslate : null as unknown as ChatGPTTranslator,
         };
 
         /**
          * DeepL translator needs help from other translators and we choose Google for now.
          */
         this.REAL_TRANSLATORS.DeepLTranslate = new DeepLTranslator(
-            this.REAL_TRANSLATORS.BingTranslate,
-            this.REAL_TRANSLATORS.BingTranslate
+            this.REAL_TRANSLATORS.BaiduTranslate,
+            this.REAL_TRANSLATORS.BaiduTranslate
         );
-
+        this.REAL_TRANSLATORS.ChatGPTTranslate = new ChatGPTTranslator(
+            this.REAL_TRANSLATORS.BaiduTranslate,
+            this.REAL_TRANSLATORS.BaiduTranslate
+        );
         this.useConfig(config);
     }
 

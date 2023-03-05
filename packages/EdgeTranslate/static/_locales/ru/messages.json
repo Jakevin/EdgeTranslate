@@ -367,6 +367,14 @@
         "message": "DeepL",
         "description": "Abbreviation of DeepL Translate."
     },
+    "ChatGPTTranslate": {
+        "message": "ChatGPT",
+        "description": "ChatGPT　Translate"
+    },
+    "ChatGPTTranslateShort": {
+        "message": "ChatGPT",
+        "description": "ChatGPT　Translate"
+    },
     "GoogleTranslate": {
         "message": "Google Переводчик",
         "description": "Google Переводчик"
