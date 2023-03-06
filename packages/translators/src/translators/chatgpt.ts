@@ -37,7 +37,7 @@ const LANGUAGES: [string, string][] = [
  */
 class ChatGPTTranslator {
 
-    API_URL = 'https://api.openai.com/v1/completions'; 
+    API_URL = 'https://api.openai.com/v1/chat/completions'; 
     /**
      * Language to translator language code.
      */
@@ -102,20 +102,20 @@ class ChatGPTTranslator {
 
             let ChatGPTKey = result.OtherSettings["ChatGPTKey"];
             const response = await axios.post(this.API_URL, {
-                prompt: `Translate "${text}" from ${from} to ${to}:`,
+                "messages": [{"role": "user", "content": `Translate "${text}" from ${from} to ${to}:`}],
                 max_tokens: 3000,
                 temperature: 0.7,
                 n: 1,
                 frequency_penalty: 0,
                 presence_penalty: 0,
-                model: 'text-davinci-003',
+                model: 'gpt-3.5-turbo',
             }, {
                 headers: {
                     'Content-Type': 'application/json',
                     'Authorization': `Bearer ${ChatGPTKey}`,
                 },
             });
-            const translation = (response.data as any).choices[0].text.trim();
+            const translation = (response.data as any).choices[0].message.content.trim();
             return { mainMeaning: translation, originalText: text } as TranslationResult;
         } catch (error: any) {
             error.errorCode = error.status || 0;
