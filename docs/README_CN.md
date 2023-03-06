@@ -21,6 +21,12 @@
 
 ![demo_zh_CN](./images/demo_zh_CN.gif)
 
+![add ChatGPT](./docs/images/chatgpt.png)
+
+![文法檢查器](./docs/images/chatgpt_grammar.png)
+
+![Remove Bing](./docs/images/remove_bing.png)
+
 ## 下载
 
 [Microsoft Edge 扩展商店](https://microsoftedge.microsoft.com/addons/detail/bfdogplmndidlpjfhoijckpakkdjkkil)

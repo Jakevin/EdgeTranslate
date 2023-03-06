@@ -10,13 +10,16 @@ import DeepLTranslator from "./deepl";
 import GoogleTranslator from "./google";
 import TencentTranslator from "./tencent";
 import ChatGPTTranslator from "./chatgpt";
+import ChatGPTGrammar from "./chatgptGrammar";
 
 export type HybridSupportedTranslators =
     | "BaiduTranslate"
     | "GoogleTranslate"
     | "TencentTranslate"
     | "DeepLTranslate"
-    | "ChatGPTTranslate";
+    | "ChatGPTTranslate"
+    | "ChatGPTGrammar";
+
 export type HybridConfig = {
     selections: Selections;
     translators: HybridSupportedTranslators[]; // a collection of used translators which is generated based on selections. The generating process is in options.js.
@@ -38,6 +41,7 @@ class HybridTranslator {
         TencentTranslate: TencentTranslator;
         DeepLTranslate: DeepLTranslator;
         ChatGPTTranslate:ChatGPTTranslator;
+        ChatGPTGrammar:ChatGPTGrammar;
     };
     MAIN_TRANSLATOR: HybridSupportedTranslators = "GoogleTranslate";
 
@@ -53,6 +57,7 @@ class HybridTranslator {
             TencentTranslate: new TencentTranslator(channel),
             DeepLTranslate: null as unknown as DeepLTranslator,
             ChatGPTTranslate : null as unknown as ChatGPTTranslator,
+            ChatGPTGrammar: null as unknown as ChatGPTGrammar,
         };
 
         /**
@@ -63,6 +68,10 @@ class HybridTranslator {
             this.REAL_TRANSLATORS.BaiduTranslate
         );
         this.REAL_TRANSLATORS.ChatGPTTranslate = new ChatGPTTranslator(
+            this.REAL_TRANSLATORS.BaiduTranslate,
+            this.REAL_TRANSLATORS.BaiduTranslate
+        );
+        this.REAL_TRANSLATORS.ChatGPTGrammar = new ChatGPTGrammar(
             this.REAL_TRANSLATORS.BaiduTranslate,
             this.REAL_TRANSLATORS.BaiduTranslate
         );

@@ -31,6 +31,8 @@ View this page in other languages:
 
 ![add ChatGPT](./docs/images/chatgpt.png)
 
+![Grammar Check](./docs/images/chatgpt_grammar.png)
+
 ![Remove Bing](./docs/images/remove_bing.png)
 
 ## Downloads

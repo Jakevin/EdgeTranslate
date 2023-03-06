@@ -373,7 +373,15 @@
     },
     "ChatGPTTranslateShort": {
         "message": "ChatGPT",
-        "description": "ChatGPT Davinci"
+        "description": "ChatGPT gpt-3.5 turbo"
+    },
+    "ChatGPTGrammar": {
+        "message": "ChatGPT Grammar",
+        "description": "ChatGPT Grammar"
+    },
+    "ChatGPTGrammarShort": {
+        "message": "ChatGPT Grammar",
+        "description": "ChatGPT Grammar Short"
     },
     "ChatGPTKey": {
         "message": "ChatGPTKey",

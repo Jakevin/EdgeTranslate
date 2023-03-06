@@ -23,6 +23,8 @@
 
 ![add ChatGPT](./docs/images/chatgpt.png)
 
+![文法檢查器](./docs/images/chatgpt_grammar.png)
+
 ![Remove Bing](./docs/images/remove_bing.png)
 
 ## 下載

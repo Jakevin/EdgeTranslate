@@ -3,24 +3,19 @@
     "description": "A translator extension.",
     "keywords": [
         "Edge Translate",
-        "侧边翻译"
+        "ChatGPT側邊翻譯-繁中友善版"
     ],
     "contributors": [
         {
-            "name": "nickyc975",
-            "email": "chenjinlong2016@outlook.com",
-            "url": "https://github.com/nickyc975"
-        },
-        {
-            "name": "Mark-Fenng",
-            "email": "f18846188605@gmail.com",
-            "url": "https://github.com/Mark-Fenng"
+            "name": "JakevinLo",
+            "email": "kevin5251984@gmail.com",
+            "url": "https://github.com/Jakevin"
         }
     ],
     "license": "MIT",
     "repository": {
         "type": "git",
-        "url": "https://github.com/EdgeTranslate/EdgeTranslate.git"
+        "url": "https://github.com/Jakevin/EdgeTranslate.git"
     },
     "scripts": {
         "build": "turbo run build",

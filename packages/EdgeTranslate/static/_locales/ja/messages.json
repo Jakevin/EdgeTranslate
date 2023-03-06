@@ -375,6 +375,14 @@
         "message": "ChatGPT",
         "description": "ChatGPT翻訳"
     },
+    "ChatGPTGrammar": {
+        "message": "ChatGPT文法檢查器",
+        "description": "ChatGPT文法檢查器"
+    },
+    "ChatGPTGrammarShort": {
+        "message": "ChatGPT文法檢查",
+        "description": "ChatGPT文法檢查器縮寫"
+    },
     "ChatGPTKey": {
         "message": "ChatGPTKey",
         "description": "ChatGPTKey"

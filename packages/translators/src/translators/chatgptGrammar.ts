@@ -102,41 +102,6 @@ class ChatGPTTranslator {
 
             let ChatGPTKey = result.OtherSettings["ChatGPTKey"];
             const response = await axios.post(this.API_URL, {
-                "messages": [{"role": "user", "content": `Translate "${text}" from ${from} to ${to}:`}],
-                max_tokens: 3000,
-                temperature: 0.7,
-                n: 1,
-                frequency_penalty: 0,
-                presence_penalty: 0,
-                model: 'gpt-3.5-turbo',
-            }, {
-                headers: {
-                    'Content-Type': 'application/json',
-                    'Authorization': `Bearer ${ChatGPTKey}`,
-                },
-            });
-            const translation = (response.data as any).choices[0].message.content.trim();
-            return { mainMeaning: translation, originalText: text } as TranslationResult;
-        } catch (error: any) {
-            error.errorCode = error.status || 0;
-            error.errorMsg = error.errorMsg || error.message;
-            error.errorAct = {
-                api: "ChatGPT",
-                action: "translate",
-                text,
-                from,
-                to,
-            };
-            throw error;
-        }
-    }
-
-    async checkGrammar(text: string, from: string, to: string) { 
-        try {
-            const result:any = await this.getStorageValuePromise("OtherSettings");
-
-            let ChatGPTKey = result.OtherSettings["ChatGPTKey"];
-            const response = await axios.post(this.API_URL, {
                 "messages": [{"role": "user", "content": `"Please correct the grammar and polish the following sentences, do not provide any translation, comments, or notes, and use the same language as input:\n\n" "${text}"`}],
                 max_tokens: 3000,
                 temperature: 0.7,
