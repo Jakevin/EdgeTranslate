@@ -13,11 +13,10 @@ import ChatGPTTranslator from "./chatgpt";
 
 export type HybridSupportedTranslators =
     | "BaiduTranslate"
-    | "DeepLTranslate"
-    | "ChatGPTTranslate"
     | "GoogleTranslate"
-    | "TencentTranslate";
-
+    | "TencentTranslate"
+    | "DeepLTranslate"
+    | "ChatGPTTranslate";
 export type HybridConfig = {
     selections: Selections;
     translators: HybridSupportedTranslators[]; // a collection of used translators which is generated based on selections. The generating process is in options.js.
