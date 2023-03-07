@@ -8,11 +8,14 @@
 
 ![demo_zh_TW](./docs/images/demo_zh_TW.gif)
 
+加入ChatGPT 與 ChatGPT文法翻譯器
 ![add ChatGPT](./docs/images/chatgpt.png)
 
+文法檢查器
 ![文法檢查器](./docs/images/chatgpt_grammar.png)
 
-![Remove Bing](./docs/images/remove_bing.png)
+DeepL結果繁體化
+![DeepL結果繁體化](./docs/images/deepl_to_zh_tw.png)
 
 ## 下載
 
