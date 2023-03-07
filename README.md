@@ -1,4 +1,4 @@
-# Edge Translate
+# 側邊翻譯
 
 [![996.icu](https://img.shields.io/badge/link-996.icu-red.svg)](https://996.icu)
 
@@ -12,146 +12,118 @@
 
 [![Microsoft Edge Add-ons](https://img.shields.io/badge/dynamic/json?logo=data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBzdGFuZGFsb25lPSJubyI/PjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+PHN2ZyB0PSIxNjI1NDYxNTI3NTY0IiBjbGFzcz0iaWNvbiIgdmlld0JveD0iMCAwIDEwMjQgMTAyNCIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHAtaWQ9IjI0MTQiIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iMzIiIGhlaWdodD0iMzIiPjxkZWZzPjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+PC9zdHlsZT48L2RlZnM+PHBhdGggZD0iTTQ2NCA2NTZxLTQ4LTUyLTU2LTExNi0yMCAzMC4wMTYtMzIgNjQtMTguMDE2IDU4LjAxNi00Ljk5MiAxMjAuOTkydDUyLjk5MiAxMTQuMDE2IDk4LjAxNiA3MS4wMDhxNjggMjQgMTUyLTggNzAuMDE2LTI2LjAxNiAxMzQuMDE2LTgyLjAxNmwxNC4wMTYtMTZxMzItMzQuMDE2IDQyLjAxNi01MC4wMTYgMjAtMzItMi4wMTYtMzYtOTguMDE2IDUyLTIxMiAzNS4wMDhUNDY0LjAzMiA2NTZ6IG0yNC0yNDhxMjQgMCAyMC45OTItNi4wMTZ0LTIwLjk5Mi0xNmwtMTYtMTAuMDE2cS02Ni4wMTYtMzYtMTQ4LTM2dC0xNDQgMzQuMDE2VDk2IDQ2OHEtMjQgNjQgMi4wMTYgMTQ2LjAxNiAzMC4wMTYgMTI2LjAxNiAxMjguOTkyIDIxNS4wMDh0MjI0Ljk5MiAxMDQuOTkycS02Ni4wMTYtNDAtMTAzLjAwOC0xMTEuMDA4VDMxMiA2NzQuMDE2cTIuMDE2LTg2LjAxNiA1MC4wMTYtMTYyLjAxNiA1MC4wMTYtODIuMDE2IDEyNi4wMTYtMTA0ek0xMTguMDE2IDM1MnE2NC00OCAxNDgtNjAuOTkydDE2NC45OTIgMTEuMDA4IDEzNS4wMDggODIuMDE2cTM2IDQwIDQ4IDkwLjAxNiAxNC4wMTYgNTYtMTQuMDE2IDk2LTM0LjAxNiAzNiA0IDYwIDI4IDE2IDkwLjAxNiAyMi4wMTYgNTYgNCA4Mi4wMTYtMi4wMTYgNzYtMTYgMTIwLTc2IDQwLTU0LjAxNiA0Mi4wMTYtMTI4Ljk5MnQtMzYtMTM5LjAwOHEtNTQuMDE2LTEwNi4wMTYtMTY0LTE2Ni4wMTYtMTA0LTU2LTIyOC01NC4wMTYtMTI4LTIuMDE2LTIzNiA3MS4wMDh0LTE1NiAxOTUuMDA4eiIgcC1pZD0iMjQxNSIgZmlsbD0iI2ZmZmZmZiI+PC9wYXRoPjwvc3ZnPg==&label=users&color=brightgreen&query=%24.activeInstallCount&url=https%3A%2F%2Fmicrosoftedge.microsoft.com%2Faddons%2Fgetproductdetailsbycrxid%2Fbfdogplmndidlpjfhoijckpakkdjkkil)](https://microsoftedge.microsoft.com/addons/detail/bfdogplmndidlpjfhoijckpakkdjkkil)
 [![Microsoft Edge Add-ons](https://img.shields.io/badge/dynamic/json?logo=data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBzdGFuZGFsb25lPSJubyI/PjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+PHN2ZyB0PSIxNjI1NDYxNTI3NTY0IiBjbGFzcz0iaWNvbiIgdmlld0JveD0iMCAwIDEwMjQgMTAyNCIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHAtaWQ9IjI0MTQiIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iMzIiIGhlaWdodD0iMzIiPjxkZWZzPjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+PC9zdHlsZT48L2RlZnM+PHBhdGggZD0iTTQ2NCA2NTZxLTQ4LTUyLTU2LTExNi0yMCAzMC4wMTYtMzIgNjQtMTguMDE2IDU4LjAxNi00Ljk5MiAxMjAuOTkydDUyLjk5MiAxMTQuMDE2IDk4LjAxNiA3MS4wMDhxNjggMjQgMTUyLTggNzAuMDE2LTI2LjAxNiAxMzQuMDE2LTgyLjAxNmwxNC4wMTYtMTZxMzItMzQuMDE2IDQyLjAxNi01MC4wMTYgMjAtMzItMi4wMTYtMzYtOTguMDE2IDUyLTIxMiAzNS4wMDhUNDY0LjAzMiA2NTZ6IG0yNC0yNDhxMjQgMCAyMC45OTItNi4wMTZ0LTIwLjk5Mi0xNmwtMTYtMTAuMDE2cS02Ni4wMTYtMzYtMTQ4LTM2dC0xNDQgMzQuMDE2VDk2IDQ2OHEtMjQgNjQgMi4wMTYgMTQ2LjAxNiAzMC4wMTYgMTI2LjAxNiAxMjguOTkyIDIxNS4wMDh0MjI0Ljk5MiAxMDQuOTkycS02Ni4wMTYtNDAtMTAzLjAwOC0xMTEuMDA4VDMxMiA2NzQuMDE2cTIuMDE2LTg2LjAxNiA1MC4wMTYtMTYyLjAxNiA1MC4wMTYtODIuMDE2IDEyNi4wMTYtMTA0ek0xMTguMDE2IDM1MnE2NC00OCAxNDgtNjAuOTkydDE2NC45OTIgMTEuMDA4IDEzNS4wMDggODIuMDE2cTM2IDQwIDQ4IDkwLjAxNiAxNC4wMTYgNTYtMTQuMDE2IDk2LTM0LjAxNiAzNiA0IDYwIDI4IDE2IDkwLjAxNiAyMi4wMTYgNTYgNCA4Mi4wMTYtMi4wMTYgNzYtMTYgMTIwLTc2IDQwLTU0LjAxNiA0Mi4wMTYtMTI4Ljk5MnQtMzYtMTM5LjAwOHEtNTQuMDE2LTEwNi4wMTYtMTY0LTE2Ni4wMTYtMTA0LTU2LTIyOC01NC4wMTYtMTI4LTIuMDE2LTIzNiA3MS4wMDh0LTE1NiAxOTUuMDA4eiIgcC1pZD0iMjQxNSIgZmlsbD0iI2ZmZmZmZiI+PC9wYXRoPjwvc3ZnPg==&label=rating&suffix=/5.0&color=brightgreen&query=%24.averageRating&url=https%3A%2F%2Fmicrosoftedge.microsoft.com%2Faddons%2Fgetproductdetailsbycrxid%2Fbfdogplmndidlpjfhoijckpakkdjkkil)](https://microsoftedge.microsoft.com/addons/detail/bfdogplmndidlpjfhoijckpakkdjkkil)
-[![Chrome Web Store](https://badgen.net/chrome-web-store/users/bocbaocobfecmglnmeaeppambideimao?icon=chrome&color=green)](https://chrome.google.com/webstore/detail/bocbaocobfecmglnmeaeppambideimao?hl=en)
-[![Chrome Web Store](https://badgen.net/chrome-web-store/stars/bocbaocobfecmglnmeaeppambideimao?icon=chrome&color=green)](https://chrome.google.com/webstore/detail/bocbaocobfecmglnmeaeppambideimao?hl=en)
+[![Chrome Web Store](https://badgen.net/chrome-web-store/users/bocbaocobfecmglnmeaeppambideimao?icon=chrome&color=green)](https://chrome.google.com/webstore/detail/bocbaocobfecmglnmeaeppambideimao?hl=zh-TW)
+[![Chrome Web Store](https://badgen.net/chrome-web-store/stars/bocbaocobfecmglnmeaeppambideimao?icon=chrome&color=green)](https://chrome.google.com/webstore/detail/bocbaocobfecmglnmeaeppambideimao?hl=zh-TW)
 [![Mozilla Add-on](https://badgen.net/amo/users/edge_translate?icon=firefox&color=green)](https://addons.mozilla.org/firefox/addon/edge_translate/)
 [![Mozilla Add-on](https://badgen.net/amo/stars/edge_translate?icon=firefox&color=green)](https://addons.mozilla.org/firefox/addon/edge_translate/)
 
-View this page in other languages:
+## 展示
 
--   [简体中文](./docs/README_CN.md)
-
--   [繁體中文](./docs/README_TW.md)
-
--   [Pусский](./docs/README_RU.md)
-
-## Demo
-
-![demo_en](./docs/images/demo_en.gif)
+![demo_zh_TW](./images/demo_zh_TW.gif)
 
 ![add ChatGPT](./docs/images/chatgpt.png)
 
-![Grammar Check](./docs/images/chatgpt_grammar.png)
+![文法檢查器](./docs/images/chatgpt_grammar.png)
 
 ![Remove Bing](./docs/images/remove_bing.png)
 
-## Downloads
+## 下載
 
-[Microsoft Edge Add-ons](https://microsoftedge.microsoft.com/addons/detail/bfdogplmndidlpjfhoijckpakkdjkkil)
-/ [Chrome Web Store](https://chrome.google.com/webstore/detail/bocbaocobfecmglnmeaeppambideimao)
-/ [Firefox Add-ons](https://addons.mozilla.org/firefox/addon/edge_translate/)
-/ [QQ Browser Web Store](https://appcenter.browser.qq.com/search/detail?key=edgetranslate&id=bocbaocobfecmglnmeaeppambideimao%20&title=edgetranslate)
-/ [360 Browser Web Store](https://ext.se.360.cn/webstore/detail/jkhojcaggkaojlhfddocjkkphfdkejeg)
+[Release](https://github.com/Jakevin/EdgeTranslate/releases)
 
-**Attention:** The version in Firefox Add-ons does not support page translate anymore. If you need page translate, please refer to [here](./docs/wiki/en/ToFirefoxUsers.md).
+**注意：** 火狐瀏覽器附加組件商店裏的版本已不再支持網頁翻譯，需要網頁翻譯的用戶請看[這裏](./wiki/zh_TW/致火狐用戶.md)。
 
-## Manually Install
+## 手動安裝
 
-Firstly you need to download the extension package for your browser (Chrome and QQ Browser use the same package) from [GitHub Releases](https://github.com/EdgeTranslate/EdgeTranslate/releases).
+從 [GitHub Releases](https://github.com/EdgeTranslate/EdgeTranslate/releases) 下載瀏覽器對應的安裝包 (Chrome 與 QQ 瀏覽器使用相同的安裝包) 。
 
-It is always recommended to download the latest version.
+建議下載最新版本。
 
 ### Chrome
 
--   Extract the `.zip` package to somewhere on your disk.
+-   將下載好的`.zip`安裝包解壓到本地；
 
--   Navigate to: `chrome://extensions`.
+-   在瀏覽器中訪問： `chrome://extensions` ；
 
--   Enable `Developer mode`. It should be in the upper right corner of the page.
+-   開啓右上角的`開發者模式`；
 
--   Click `Load unpacked` in the upper left corner.
+-   點擊右上角的`加載已解壓的擴展程序`；
 
--   Navigate to the directory of the extracted package.
-
-### QQ Browser
-
--   Extract the `.zip` package to somewhere on your disk.
-
--   Navigate to: `qqbrowser://extensions/manage`.
-
--   Enable `Developer mode`. It should be in the upper right corner of the page.
-
--   Click `Load unpacked` in the upper left corner.
-
--   Navigate to the directory of the extracted package.
+-   打開剛纔解壓得到的文件夾，點確定；
 
 ### Firefox
 
--   Installation will start automatically after the `.xapi` package is downloaded through Firefox browser.
+-   使用 Firefox 下載`.xapi`文件，下載完成後會自動安裝；
 
-### 360 Browser
+## 構建擴展
 
--   Right click on the package file and choose "Use 360 Browser to open", then it will be installed automatically.
+構建本擴展需要安裝 [Node.js](https://nodejs.org/) 和 [yarn](https://classic.yarnpkg.com/en/docs/install)。
 
-## Build It By Yourself
-
-To build the extension, you need to have [Node.js](https://nodejs.org/) and [yarn](https://classic.yarnpkg.com/en/docs/install) installed.
-
-Clone the repository:
+克隆倉庫：
 
 ```shell
-git clone https://github.com/EdgeTranslate/EdgeTranslate.git
+git clone https://github.com/Jakevin/EdgeTranslate.git
 ```
 
-Install dependencies:
+安裝依賴：
 
 ```shell
 yarn
 ```
 
-Build packages for Chrome and Firefox:
+構建 Chrome 和 Firefox 擴展：
 
 ```shell
 yarn build
 ```
 
-After building finished, you will get the unpacked extension under `./packages/EdgeTranslate/build/chrome/` and `./packages/EdgeTranslate/build/firefox/`.
+構建完成之後在 `./packages/EdgeTranslate/build/chrome/` 和 `./packages/EdgeTranslate/build/firefox/` 文件夾下可分別找到 Chrome 擴展和 Firefox 擴展。
 
-## Load Unpacked Extension In Your Browser
+## 在瀏覽器中加載已解壓的擴展
 
 ### Chrome
 
--   Navigate to: `chrome://extensions`.
+-   在瀏覽器中訪問： `chrome://extensions` ；
 
--   Enable `Developer mode`. It should be in the upper right corner of the page.
+-   開啓右上角的`開發者模式`；
 
--   Click `Load unpacked` in the upper left corner.
+-   點擊左上角的`加載已解壓的擴展程序`；
 
--   Navigate to the repository you just cloned, select `build/chrome`.
+-   找到剛才克隆下來的倉庫，打開 `build` 文件夾，選擇其中的 `chrome` 文件夾；
 
--   Now you can try this extension in Chrome.
+-   現在你就可以在 Chrome 中體驗本擴展了。
 
 ### Firefox
 
--   Navigate to: `about:debugging`.
+-   在瀏覽器中訪問： `about:debugging` ；
 
--   Check the `Enable add-on debugging` box if it's not checked.
+-   選中該頁面上的`啓用附加組件調試`；
 
--   Click `Load Temporary Add-on`.
+-   點擊`臨時載入附加組件`；
 
--   Navigate to the repository you just cloned, open `build/firefox`, select any file in this directory.
+-   找到剛才克隆下來的倉庫，打開 `build/firefox` , 選擇其中的任意一個文件；
 
--   Now you can try this extension in Firefox.
+-   現在你就可以在 Firefox 中體驗本擴展了。
 
-## More Information
+## 瞭解更多
 
-[Wiki](./docs/wiki/en/Introduction.md)
+[Wiki](./wiki/zh_TW/插件介紹.md)
 
-## Contact Us
+## 聯係我們
 
-E-mails: [nickyc975](mailto:chenjinlong2016@outlook.com), [Mark Fenng](mailto:f18846188605@gmail.com)
+電子郵件: [nickyc975](mailto:chenjinlong2016@outlook.com), [Mark Fenng](mailto:f18846188605@gmail.com)
 
-Telegram channel: [Edge Translate Channel](https://t.me/EdgeTranslate)
+Telegram 頻道: [側邊翻譯頻道](https://t.me/EdgeTranslate)
 
-QQ group: [Edge Translate QQ Group](https://jq.qq.com/?_wv=1027&k=gT5EYfFB)
+QQ 群: [側邊翻譯用戶交流群](https://jq.qq.com/?_wv=1027&k=gT5EYfFB)
 
-Join the channel or group to get Edge Translate beta packages before releases.
+加入頻道或群組可以在正式版本發佈前獲得測試包，提前體驗新特性。
 
-## License
+## 開源協議
 
-[MIT](./LICENSE.MIT) AND [NPL](./LICENSE.NPL)
+[MIT](../LICENSE.MIT) 與 [NPL](../LICENSE.NPL)
 
-## Contributors
+## 貢獻者
 
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
 <!-- prettier-ignore-start -->
@@ -183,14 +155,14 @@ Join the channel or group to get Edge Translate beta packages before releases.
 
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
-## Help Localization
+## 幫助本地化
 
-If you want to help localize Edge Translate, please read the following guide.
+如果你願意幫忙將側邊翻譯翻譯到其他語言，請閱讀下方的指引。
 
-[Localization](./docs/wiki/en/Localization.md)
+[本地化](./wiki/zh_TW/本地化.md)
 
-## Sponsor
+## 支持我們
 
-It took us much time and energy to develop this project. If it truly helped you in some way, you could reward us with cans of Coke to support us to keep improving it: [PayPal](https://paypal.me/EdgeTranslate).
+開發側邊翻譯花費了我們許多的時間和精力，如果你真的覺得這個項目對你有幫助，不妨請我們喝罐可樂，支持我們繼續做下去：[PayPal](https://paypal.me/EdgeTranslate)
 
-But, this is completely **voluntary**. Sponsoring won't bring any special treatment and you can still use Edge Translate freely without sponsoring. Do it according to your capability!
+當然，這 **純屬自願**，打賞并不會帶來什麽優待，不打賞也不會有影響，請量力而爲！
