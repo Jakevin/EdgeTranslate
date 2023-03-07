@@ -6,7 +6,7 @@
 
 ## 展示
 
-![demo_zh_TW](./images/demo_zh_TW.gif)
+![demo_zh_TW](./docs/images/demo_zh_TW.gif)
 
 ![add ChatGPT](./docs/images/chatgpt.png)
 
