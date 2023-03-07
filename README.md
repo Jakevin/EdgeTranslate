@@ -9,12 +9,15 @@
 ![demo_zh_TW](./docs/images/demo_zh_TW.gif)
 
 加入ChatGPT 與 ChatGPT文法翻譯器
+
 ![add ChatGPT](./docs/images/chatgpt.png)
 
 文法檢查器
+
 ![文法檢查器](./docs/images/chatgpt_grammar.png)
 
 DeepL結果繁體化
+
 ![DeepL結果繁體化](./docs/images/deepl_to_zh_tw.png)
 
 ## 下載
@@ -97,7 +100,7 @@ yarn build
 
 ## 瞭解更多
 
-[Wiki](./wiki/zh_TW/插件介紹.md)
+[Wiki](https://github.com/EdgeTranslate/EdgeTranslate/blob/master/docs/wiki/zh_TW/%E6%8F%92%E4%BB%B6%E4%BB%8B%E7%B4%B9.md)
 
 ## 聯係我們
 
@@ -149,7 +152,7 @@ QQ 群: [側邊翻譯用戶交流群](https://jq.qq.com/?_wv=1027&k=gT5EYfFB)
 
 如果你願意幫忙將側邊翻譯翻譯到其他語言，請閱讀下方的指引。
 
-[本地化](./wiki/zh_TW/本地化.md)
+[本地化](https://github.com/EdgeTranslate/EdgeTranslate/blob/master/docs/wiki/zh_TW/%E6%9C%AC%E5%9C%B0%E5%8C%96.md)
 
 ## 支持我們
 
