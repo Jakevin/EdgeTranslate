@@ -1,5 +1,5 @@
 import { PronunciationSpeed, TranslationResult } from "../types";
-
+import Utils from "../utils";
 /**
  * Supported languages.
  */
@@ -141,7 +141,11 @@ class DeepLTranslator {
                 );
             });
 
-            return { mainMeaning: result, originalText: text } as TranslationResult;
+            const utils = new Utils()
+            console.log("deepl result", utils.s2t(result))
+
+
+            return { mainMeaning: utils.s2t(result), originalText: text } as TranslationResult;
         } catch (error: any) {
             /**
              * Status 408 means we can not communicate with the iframe. Thus we have to recreate it.

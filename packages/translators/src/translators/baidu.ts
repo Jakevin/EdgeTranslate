@@ -8,6 +8,7 @@ import {
     TranslationError,
     TranslationResult,
 } from "../types";
+import Utils from "../utils";
 
 /**
  * Supported languages.
@@ -309,6 +310,8 @@ class BaiduTranslator {
      * @returns Parsed result
      */
     parseResult(result: any) {
+        const utils = new Utils()
+
         const parsed: TranslationResult = {
             originalText: "",
             mainMeaning: "",
@@ -320,7 +323,7 @@ class BaiduTranslator {
             mainMeanings.push(item.dst);
         }
         parsed.originalText = originalTexts.join("\n");
-        parsed.mainMeaning = mainMeanings.join("\n");
+        parsed.mainMeaning = utils.s2t(mainMeanings.join("\n"));
 
         if (result.trans_result.phonetic) {
             parsed.tPronunciation = result.trans_result.phonetic
