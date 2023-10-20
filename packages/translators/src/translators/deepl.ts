@@ -109,7 +109,7 @@ class DeepLTranslator {
                  */
                 const timeoutId = setTimeout(() => {
                     reject({ status: 408, errorMsg: "Request timeout!" });
-                }, 10000);
+                }, 20000);
 
                 /**
                  * Wait for the iframe to send back translate result.

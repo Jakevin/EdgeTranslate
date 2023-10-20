@@ -539,7 +539,7 @@ class BaiduTranslator {
         this.stopPronounce();
 
         // Set actual speed value.
-        let speedValue = speed === "fast" ? "7" : "3";
+        let speedValue = speed === "fast" ? "3" : "3";
 
         this.AUDIO.src = `${this.HOST}gettts?lan=${this.LAN_TO_CODE.get(
             language

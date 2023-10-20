@@ -27,10 +27,15 @@
          */
         const intervalId = setInterval(() => {
             /**
-             * "target-dummydiv" is the element which holds the translate result.
+             * "lmt__target_textarea" is the element which holds the translate result.
              */
-            const targetDummyDIV = document.getElementById("target-dummydiv");
-            const result = targetDummyDIV ? targetDummyDIV.textContent.trim() : "";
+            const targetTextAreas = [...document.getElementsByClassName("sentence_highlight")];
+            var result = ""
+            if (targetTextAreas && targetTextAreas.length > 0) {
+                targetTextAreas.forEach(element => {
+                    result = result + element.innerText.trim()
+                });
+            }
 
             if (result.length > 0) {
                 /**
@@ -41,7 +46,7 @@
                     chrome.runtime.getURL("")
                 );
                 clearInterval(intervalId);
-            } else if (++checkCnt > 10) {
+            } else if (++checkCnt > 200) {
                 /**
                  * Waited for too long, stop waiting and signal translator.
                  */
