@@ -32,8 +32,14 @@
             const targetTextAreas = [...document.getElementsByClassName("sentence_highlight")]
             var result = ""
             if (targetTextAreas && targetTextAreas.length > 0) {
+                let i = 0
                 targetTextAreas.forEach( (element) => {
-                    result = result + element.innerText.trim()
+                    if (i<targetTextAreas.length/2){
+                        
+                    }else {
+                        result = result + element.innerText.trim()
+                    }
+                    i += 1
                 })
             }
 

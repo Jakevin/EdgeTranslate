@@ -37,7 +37,7 @@ const LANGUAGES: [string, string][] = [
  */
 class ChatGPTTranslator {
 
-    API_URL = 'https://api.openai.com/v1/chat/completions'; 
+    API_URL = '/v1/chat/completions';
     /**
      * Language to translator language code.
      */
@@ -80,10 +80,10 @@ class ChatGPTTranslator {
     async detect(text: string) {
         return await this.langDetector.detect(text);
     }
-    
-    getStorageValuePromise(key:string) {
+
+    getStorageValuePromise(key: string) {
         return new Promise((resolve) => {
-          chrome.storage.sync.get(key, resolve);
+            chrome.storage.sync.get(key, resolve);
         });
     }
 
@@ -96,19 +96,28 @@ class ChatGPTTranslator {
      *
      * @returns translation Promise
      */
-    async translate(text: string, from: string, to: string) { 
+    async translate(text: string, from: string, to: string) {
         try {
-            const result:any = await this.getStorageValuePromise("OtherSettings");
+            const result: any = await this.getStorageValuePromise("OpenAISettings");
 
-            let ChatGPTKey = result.OtherSettings["ChatGPTKey"];
-            const response = await axios.post(this.API_URL, {
-                "messages": [{"role": "user", "content": `Translate "${text}" from ${from} to ${to}:`}],
+            let ChatGPTKey = result.OpenAISettings["ChatGPTKey"];
+            let OpenAIURL = result.OpenAISettings["OpenAIURL"];
+            let ModelName = result.OpenAISettings["ModelName"];
+
+            if (ModelName === undefined || ModelName === "" || ModelName === null) {
+                ModelName = 'gpt-3.5-turbo';
+            }
+
+            console.log("ChatGPTKey", ChatGPTKey);
+
+            const response = await axios.post(OpenAIURL + this.API_URL, {
+                "messages": [{ "role": "user", "content": `Translate "${text}" from ${from} to ${to}:` }],
                 max_tokens: 3000,
                 temperature: 0.7,
                 n: 1,
                 frequency_penalty: 0,
                 presence_penalty: 0,
-                model: 'gpt-3.5-turbo',
+                model: ModelName,
             }, {
                 headers: {
                     'Content-Type': 'application/json',
@@ -131,19 +140,28 @@ class ChatGPTTranslator {
         }
     }
 
-    async checkGrammar(text: string, from: string, to: string) { 
+    async checkGrammar(text: string, from: string, to: string) {
         try {
-            const result:any = await this.getStorageValuePromise("OtherSettings");
+            const result: any = await this.getStorageValuePromise("OpenAISettings");
 
-            let ChatGPTKey = result.OtherSettings["ChatGPTKey"];
-            const response = await axios.post(this.API_URL, {
-                "messages": [{"role": "user", "content": `"Please correct the grammar and polish the following sentences, do not provide any translation, comments, or notes, and use the same language as input:\n\n" "${text}"`}],
+            let ChatGPTKey = result.OpenAISettings["ChatGPTKey"];
+            let OpenAIURL = result.OpenAISettings["OpenAIURL"];
+            let ModelName = result.OpenAISettings["ModelName"];
+
+            if (ModelName === undefined || ModelName === "" || ModelName === null) {
+                ModelName = 'gpt-3.5-turbo';
+            }
+
+            console.log("ChatGPTKey", ChatGPTKey);
+
+            const response = await axios.post(OpenAIURL + this.API_URL, {
+                "messages": [{ "role": "user", "content": `"Please correct the grammar and polish the following sentences, do not provide any translation, comments, or notes, and use the same language as input:\n\n" "${text}"` }],
                 max_tokens: 3000,
                 temperature: 0.7,
                 n: 1,
                 frequency_penalty: 0,
                 presence_penalty: 0,
-                model: 'gpt-3.5-turbo',
+                model: ModelName,
             }, {
                 headers: {
                     'Content-Type': 'application/json',
