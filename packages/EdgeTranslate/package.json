@@ -1,6 +1,6 @@
 {
     "name": "edge_translate",
-    "version": "2.4.3.5",
+    "version": "2.4.3.6",
     "private": true,
     "scripts": {
         "test": "jest",

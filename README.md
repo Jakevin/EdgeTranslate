@@ -20,6 +20,16 @@ DeepL結果繁體化
 
 ![DeepL結果繁體化](./docs/images/deepl_to_zh_tw.png)
 
+## OpenAI相關設定
+
+![OpenAI設定](./docs/images/openai_setting.png)
+
+除了OpenAI外，越來越多服務商有提供相容OpenAI的服務，價格也便宜不少
+
+此外，也可自行加入自架的Ollama Server
+
+推薦服務：[groq](https://wow.groq.com/groq-labs/)
+
 ## 下載
 
 [Release](https://github.com/Jakevin/EdgeTranslate/releases)
